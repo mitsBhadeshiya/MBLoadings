@@ -16,7 +16,9 @@ for hide Loading view just call method
 
 it very simple!!! 
 
-![alt tag](https://raw.github.com/mitsBhadeshiya/MBLoadings/master/MBLoadingView/screen.png)
+![alt tag](https://raw.github.com/mitsBhadeshiya/MBLoadings/master/MBLoadingView/screen.png)<br>
+![alt tag](https://raw.github.com/mitsBhadeshiya/MBLoadings/master/MBLoadingView/screen2.png)<br>
+![alt tag](https://raw.github.com/mitsBhadeshiya/MBLoadings/master/MBLoadingView/screen3.png)
 
 
 
