@@ -27,6 +27,7 @@
 +(MbLoading *)loading;
 
 -(void)showLoadingView;
+-(void)showLoadingViewWithColor:(UIColor *)color;
 -(void)hideLoadingView;
 
 

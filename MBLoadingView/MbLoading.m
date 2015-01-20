@@ -26,7 +26,7 @@ AppDelegate *appDelegate;
     return objLoading;
 }
 
--(void)showLoadingView
+-(void)showLoadingViewWithColor:(UIColor *)color
 {
     CGRect screenRect = [UIScreen mainScreen].bounds;
     if (loadingBack == nil)
@@ -38,7 +38,7 @@ AppDelegate *appDelegate;
         
         loadingView = [[UIView alloc]initWithFrame:CGRectMake((windowFrame.size.width - OUTER_FRAME_SIZE)/2, (windowFrame.size.height -OUTER_FRAME_SIZE)/2, OUTER_FRAME_SIZE, OUTER_FRAME_SIZE)];
         loadingView.alpha =.7f;
-        loadingView.backgroundColor = [UIColor blackColor];
+        loadingView.backgroundColor = color;
         loadingView.layer.cornerRadius = OUTER_FRAME_SIZE/2;
         loadingView.layer.zPosition = MAXFLOAT;
         
@@ -57,11 +57,19 @@ AppDelegate *appDelegate;
         
         [loadingView addSubview:view];
         [loadingBack addSubview:loadingView];
-
+        
     }
     [appDelegate.window addSubview:loadingView];
     
     NSLog(@"SHOW LOADING..");
+}
+
+
+-(void)showLoadingView
+{
+    
+    [self showLoadingViewWithColor:[UIColor blackColor]];
+    
 }
 
 -(void)hideLoadingView

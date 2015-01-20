@@ -23,13 +23,15 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-
 }
-
 
 - (IBAction)onClickShowLoaingView:(id)sender {
     
-    [[MbLoading loading] showLoadingView];
+    // LOADING VIEW WITH COLOR  DEFAULT COLOR IS BLACK
+    //[[MbLoading loading] showLoadingView];
+    
+    [[MbLoading loading]showLoadingViewWithColor:[UIColor orangeColor]];
+    
     [self performSelector:@selector(hideLoading) withObject:nil afterDelay:5.0f];
 }
 
